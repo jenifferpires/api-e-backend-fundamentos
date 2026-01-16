@@ -1,4 +1,4 @@
-# HTTP, APIs e Observabilidade – Uma Visão Sistêmica,
+# HTTP, APIs e Observabilidade – Uma Visão Sistêmica.
 
 Este módulo apresenta os conceitos fundamentais sobre HTTP, APIs e observabilidade,
 com foco na comunicação entre sistemas, diagnóstico de falhas e entendimento do
