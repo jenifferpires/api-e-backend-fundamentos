@@ -34,7 +34,7 @@ JWT carrega as informações necessárias para validação diretamente no token.
 
 ---
 
-## 🧱 Estrutura de um JWT.
+### 🧱 Estrutura de um JWT. 
 
 Um JWT é composto por três partes, separadas por ponto (`.`):
 
@@ -64,7 +64,7 @@ Exemplo:
 }
 ```
 
-⚠️ Importante:  
+#### ⚠️ Importante:  
 O payload não é criptografado, apenas codificado.  
 Nunca deve conter dados sensíveis.  
 
