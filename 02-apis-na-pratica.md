@@ -1,4 +1,4 @@
-# APIs na Prática – Testes, Diagnóstico e Análise Técnica
+# APIs na Prática – Testes, Diagnóstico e Análise Técnica.
 
 Este módulo aborda o uso prático de APIs REST, com foco em testes, análise de falhas
 e raciocínio técnico aplicado a ambientes de produção e sustentação de sistemas.
