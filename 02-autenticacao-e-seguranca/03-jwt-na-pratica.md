@@ -138,7 +138,5 @@ JWT é um componente crítico da segurança em APIs modernas.
 Entender sua estrutura e funcionamento permite:   
 
 Diagnosticar falhas rapidamente.  
-
 Garantir segurança e escalabilidade.  
-
 Atuar com maturidade técnica em ambientes críticos.  
