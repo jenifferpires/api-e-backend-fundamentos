@@ -69,7 +69,7 @@ e raciocínio técnico**.
 
 ---
 
-### 📁 04-banco-de-dados-e-sql.  
+### 📁 04-banco-de-dados-e-sql/  
 **Fundamentos de SQL com foco em backend, APIs e diagnóstico.**
 
 - SQL essencial
@@ -78,7 +78,7 @@ e raciocínio técnico**.
 
 ---
 
-### 📁 05-simulacoes.  
+### 📁 05-simulacoes/  
 **Aplicação prática dos conceitos em cenários realistas.**
 
 - Cenários de suporte e sustentação
