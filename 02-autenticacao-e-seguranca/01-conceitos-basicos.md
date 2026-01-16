@@ -104,35 +104,37 @@ Tokens permitem:
 
 Eles normalmente são enviados no header HTTP:
 
-Authorization: Bearer <token>
+Authorization: Bearer <token> 
 
----
+--- 
 
-## 🧠 Visão de Segurança para Analistas de Sistemas.  
+## 🧠 Visão sistêmica sobre segurança.
 
-Um analista com visão madura entende que:
-- Erros 401 e 403 não são falhas de sistema, mas de acesso
+Um profissional com maturidade técnica entende que:
+
+- Erros 401 e 403 não indicam falha de sistema
 - Segurança deve ser monitorada continuamente
 - Logs de autenticação são críticos para auditoria
-- Qualquer falha de acesso em ambiente financeiro deve ser tratada com atenção
+- Falhas de acesso podem indicar problemas operacionais ou riscos de segurança
 
-Essa visão é fundamental para atuar em sistemas sensíveis e regulados.
+Essa visão é essencial em ambientes regulados e de alta criticidade.
 
 ---
 
-## 🎯 Importância desses conceitos.  
+## 🎯 Importância desses conceitos. 
 
-Dominar autenticação e autorização permite:
-- Diagnosticar falhas de acesso rapidamente
+Compreender autenticação e autorização permite:
+
+- Diagnosticar falhas de acesso com rapidez
 - Evitar escalonamentos indevidos
 - Garantir integridade e confidencialidade dos dados
-- Apoiar decisões técnicas e de segurança
-- Atuar de forma responsável em ambientes críticos
+- Apoiar decisões técnicas e de arquitetura
+- Atuar de forma responsável em sistemas críticos
 
 ---
 
 ## ✅ Conclusão: 
 
-Autenticação e autorização são pilares da segurança em APIs.  
-Compreender esses conceitos é essencial para qualquer profissional que atue com
-integrações, sistemas distribuídos e aplicações financeiras.
+Autenticação e autorização são pilares da segurança em APIs. 
+Dominar esses conceitos é essencial para qualquer profissional que atue com
+integrações, sistemas distribuídos e aplicações modernas.
