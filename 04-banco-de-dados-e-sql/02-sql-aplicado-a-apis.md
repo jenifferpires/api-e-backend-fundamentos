@@ -104,20 +104,20 @@ Em APIs que atendem múltiplas requisições simultâneas, o banco de dados
 
 Problemas comuns nesse cenário incluem:
 
-atualizações concorrentes sobre o mesmo registro. 
-dados inconsistentes após múltiplas requisições. 
-lentidão causada por locks prolongados. 
-falhas intermitentes difíceis de reproduzir. 
+Atualizações concorrentes sobre o mesmo registro. 
+Dados inconsistentes após múltiplas requisições. 
+Lentidão causada por locks prolongados. 
+Falhas intermitentes difíceis de reproduzir. 
 
 Por isso, APIs bem projetadas consideram não apenas a consulta em si,
 mas como ela se comporta sob carga. 
 
 #### Boas práticas aplicadas ao uso de SQL em APIs incluem: 
 
-atualizar apenas os campos necessários.
-evitar transações longas.
-garantir que operações críticas sejam previsíveis.
-pensar no impacto de múltiplas chamadas simultâneas.
+Atualizar apenas os campos necessários.
+Etar transações longas.
+Garantir que operações críticas sejam previsíveis.
+Pensar no impacto de múltiplas chamadas simultâneas.
 
 Esse cuidado reduz falhas em produção, melhora a confiabilidade da API
 e facilita o diagnóstico em cenários de incidentes.
@@ -125,9 +125,9 @@ e facilita o diagnóstico em cenários de incidentes.
 Do ponto de vista de observabilidade, consultas mal projetadas
 tendem a aparecer como:
 
-aumento gradual de latência. 
-picos de uso de CPU ou IO. 
-crescimento de erros 5xx na API. 
+Aumento gradual de latência. 
+Picos de uso de CPU ou IO. 
+Crescimento de erros 5xx na API. 
 
 Entender essa relação entre SQL e comportamento da API
 é essencial para profissionais que atuam com sistemas críticos. 
