@@ -62,42 +62,37 @@ Um status `200 OK` indica que a requisição foi processada com sucesso.
 
 Os códigos HTTP são o primeiro indicador de falha ou sucesso.
 
-`400 – Bad Request`
+`400 – Bad Request`  
+Indica erro na requisição enviada, como: 
 
-Indica erro na requisição enviada, como:
+Dados inválidos.  
+Campos obrigatórios ausentes.  
+Formato incorreto do payload.  
+ 
+`401 – Unauthorized`   
+Indica falha de autenticação:   
 
-Dados inválidos.
-Campos obrigatórios ausentes.
-Formato incorreto do payload.
+Token inválido.  
+Token expirado.  
+Token ausente.  
 
-`401 – Unauthorized`
+`403 – Forbidden`  
+Indica falta de permissão:  
 
-Indica falha de autenticação:
+Usuário autenticado, mas sem acesso ao recurso.  
 
-Token inválido.
-Token expirado.
-Token ausente.
+`404 – Not Found`  
+Indica recurso inexistente:   
 
-`403 – Forbidden`
+Endpoint incorreto.   
+Registro não encontrado.   
 
-Indica falta de permissão:
+`5xx – Erro de Servidor`  
+Indica falha no backend:   
 
-Usuário autenticado, mas sem acesso ao recurso
-
-`404 – Not Found`
-
-Indica recurso inexistente: 
-
-Endpoint incorreto. 
-Registro não encontrado. 
-
-`5xx – Erro de Servidor`
-
-Indica falha no backend: 
-
-Erro de código. 
-Falha de integração. 
-Serviço indisponível. 
+Erro de código.  
+Falha de integração.  
+Serviço indisponível.  
 
 🔍 Exemplo de cenário real de diagnóstico.  
 Cenário:  
@@ -129,7 +124,7 @@ Essa chamada solicita os dados do cliente identificado pelo ID 123.
 
 Toda resposta HTTP deve ser analisada considerando dois pontos principais: 
 
-Status Code. 
+Status Code.  
 Conteúdo do body (quando houver). 
 
 Exemplo de resposta bem-sucedida: 
@@ -241,7 +236,7 @@ Pensar em impacto sistêmico.
 
 ## ✅ Conclusão:
 
-Trabalhar com APIs na prática exige mais do que saber consumir endpoints.
+Trabalhar com APIs na prática exige mais do que saber consumir endpoints. 
 Exige capacidade de análise, interpretação de erros e visão sistêmica.
 
 Essas habilidades são essenciais para atuação em ambientes modernos baseados em APIs,
