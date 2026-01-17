@@ -97,36 +97,40 @@ Lentidão.
 Bloqueios.  
 Erros intermitentes.  
 
-## 🚨 SQL e erros em APIs. 
+## 🔒 SQL em APIs: Consistência, Concorrência e Impacto em Produção.
 
-Consultas SQL mal construídas podem causar:
+Em APIs que atendem múltiplas requisições simultâneas, o banco de dados
+é um ponto crítico para a estabilidade do sistema.
 
-Erros 500 (falha no backend).  
-Timeouts.  
-Dados inconsistentes.  
-Comportamento inesperado.  
+Problemas comuns nesse cenário incluem:
 
-Saber identificar se o erro vem do banco evita diagnósticos incorretos.  
+atualizações concorrentes sobre o mesmo registro. 
+dados inconsistentes após múltiplas requisições. 
+lentidão causada por locks prolongados. 
+falhas intermitentes difíceis de reproduzir. 
 
-## 🔍 Visão de suporte e sustentação.  
+Por isso, APIs bem projetadas consideram não apenas a consulta em si,
+mas como ela se comporta sob carga. 
 
-Durante um incidente, perguntas importantes incluem:
+#### Boas práticas aplicadas ao uso de SQL em APIs incluem: 
 
-Qual endpoint está afetado?    
-Qual query ele executa?  
-Houve mudança recente?  
-Existe aumento de volume de dados?  
+atualizar apenas os campos necessários.
+evitar transações longas.
+garantir que operações críticas sejam previsíveis.
+pensar no impacto de múltiplas chamadas simultâneas.
 
-Essa análise orienta a investigação correta.  
+Esse cuidado reduz falhas em produção, melhora a confiabilidade da API
+e facilita o diagnóstico em cenários de incidentes.
 
-### 🧠 Boas práticas aplicadas a APIs.    
+Do ponto de vista de observabilidade, consultas mal projetadas
+tendem a aparecer como:
 
-Queries simples e objetivas.   
-Uso consciente de JOINs.    
-Paginação obrigatória.    
-Monitoramento de queries lentas.    
-Revisão periódica de performance.    
+aumento gradual de latência. 
+picos de uso de CPU ou IO. 
+crescimento de erros 5xx na API. 
 
+Entender essa relação entre SQL e comportamento da API
+é essencial para profissionais que atuam com sistemas críticos. 
 
 ### ✅ Conclusão:   
 
