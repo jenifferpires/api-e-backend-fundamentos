@@ -24,15 +24,15 @@ Esse formato ajuda a organizar o pensamento e comunicar soluções.
 
 ## 📌 Cenário 1 – API retorna erro 401 após período de funcionamento normal:  
 
-### Contexto.  
+### Contexto:  
 Uma integração entre sistemas funcionava corretamente e passou a retornar
 erro 401 Unauthorized sem alterações aparentes.  
 
-### Sintoma.  
+### Sintoma:  
 - Erro 401 em todos os endpoints.    
 - Sistema cliente não consegue autenticar.  
 
-### Análise técnica. 
+### Análise técnica:  
 Erro 401 indica falha de autenticação.  
 Como o sistema funcionava antes, a suspeita inicial não é erro de código.
 
@@ -50,23 +50,23 @@ Como o sistema funcionava antes, a suspeita inicial não é erro de código.
 
 ## 📌 Cenário 2 – Endpoint retorna 403 para alguns usuários: 
 
-### Contexto.  
+### Contexto:  
 Usuários autenticados conseguem acessar parte do sistema,
 mas recebem erro 403 em determinadas funcionalidades.  
 
-### Sintoma.  
+### Sintoma:  
 - Login bem-sucedido.  
 - Erro 403 Forbidden em endpoints específicos.  
 
-### Análise técnica.  
+### Análise técnica:  
 Erro 403 indica problema de autorização, não autenticação.  
 
-### Diagnóstico provável. 
+### Diagnóstico provável:  
 - Perfil sem permissão necessária.  
 - Escopo ausente no token.  
 - Regra de acesso mal configurada.  
 
-### Ação recomendada. 
+### Ação recomendada:   
 - Validar roles e escopos do token.  
 - Conferir regras de autorização do endpoint.  
 
@@ -74,14 +74,14 @@ Erro 403 indica problema de autorização, não autenticação.
 
 ## 📌 Cenário 3 – API lenta em horários específicos:  
 
-### Contexto.  
+### Contexto:  
 API apresenta lentidão recorrente em horários de pico.  
 
-### Sintoma. 
+### Sintoma:  
 - Aumento do tempo de resposta. 
 - Timeouts intermitentes.  
 
-### Análise técnica. 
+### Análise técnica:  
 Lentidão pode estar relacionada a:
 - Volume de requisições.  
 - Queries SQL ineficientes.  
@@ -101,7 +101,7 @@ Lentidão pode estar relacionada a:
 
 ## 📌 Cenário 4 – Erro 500 ao atualizar dados:  
 
-### Contexto 
+### Contexto:  
 Usuário relata erro ao atualizar informações via API.
 
 ### Sintoma: 
@@ -126,24 +126,24 @@ Pode estar relacionado a validação, banco ou lógica de negócio.
 
 ## 📌 Cenário 5 – Erro intermitente de autenticação:  
 
-### Contexto.
+### Contexto:  
 Usuários relatam falhas esporádicas de acesso.
 
-### Sintoma
+### Sintoma:  
 - Alguns requests funcionam.  
 - Outros retornam 401.  
 
-### Análise técnica
+### Análise técnica:  
 Problemas intermitentes indicam:
 - Cache de token.  
 - Diferença de horário.  
 - Token próximo da expiração.  
 
-### Diagnóstico provável. 
+### Diagnóstico provável:  
 - Falha no controle de tempo de vida do token.  
 - Sincronização de horário entre sistemas. 
 
-### Ação recomendada. 
+### Ação recomendada:  
 - Analisar logs de autenticação.  
 - Validar tempo de expiração.  
 - Ajustar estratégia de renovação. 
